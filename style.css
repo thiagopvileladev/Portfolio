@@ -1,0 +1,2563 @@
+:root{
+    --azul-: rgba(41, 196, 255);
+    color-scheme: only light;
+}
+
+
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.22),       transparent),
+    radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.1), transparent);
+    background-attachment: fixed;
+    font-family: AnyBody, sans-serif;
+    position: relative;
+}
+
+
+
+@import url('https://fonts.cdnfonts.com/css/archivo-black');
+
+.gradientBlue{
+    background: linear-gradient(90deg, rgb(41,196,255), rgb(41, 255, 184));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: relative;
+    
+}
+
+#upperName{
+    display: flex;
+    align-items: center;
+    gap:.75rem;
+    position: absolute;
+    top: .5rem;
+    left: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+    transition: background 0.5s ease, -webkit-text-fill-color 0.5s ease;
+    padding: 0 0 0 .6rem;
+    cursor: pointer;
+}
+
+#upperNameCircle {
+    width: .9rem;
+    height: .9rem;
+    border-radius: 50%;
+    animation: pulseGreen 1.3s infinite;
+}
+
+
+#headerWelcome {
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(216, 216, 216);
+}
+
+#headerTitle {
+    font-size: 5rem;
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    transition: background 0.5s ease, -webkit-text-fill-color 0.5s ease;
+    cursor: pointer;
+}
+
+#headerText{
+    color:white;
+    font-size: 1rem;
+}
+
+#headerResume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 15rem;
+    height: 3rem;
+    font-family: 'Archivo Black', sans-serif;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 11px;
+    transition: .35s;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#headerResume svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+#headerButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+    height: 3rem;
+    margin: 1rem 0 0 0;
+}
+
+#contactButton, #githubButton, #linkedinButton{
+    color: white;
+    fill: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(9, 9, 41);
+    border: 1.4px solid rgb(83, 83, 83);
+    border-radius: 11px;
+    transition: .4s;
+}
+
+#contactButton{
+    padding: 1rem 1.3rem;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 100;
+}
+
+#githubButton{
+    padding: .5rem 1rem;
+}
+
+#linkedinButton{
+    padding: .5rem 1rem;
+}
+
+#githubButton svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+#linkedinButton svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+/*SOBRE*/
+
+#about{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+#aboutHolder{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 65rem;
+    height: fit-content;
+    padding: 3.5rem 0;
+    background-color: rgba(62, 126, 151, 0);
+}
+
+#aboutHolderImg{
+    width: 18rem;
+    height: 18rem;
+    background-color: white;
+    border-radius: 11px;
+    overflow: hidden;
+    margin-top: 5.5rem;
+}
+
+#aboutHolderImg img{
+    width: 100%;
+    transition: .35s;
+}
+
+#aboutHolderHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 46rem;
+    height: 100%;
+}
+
+#aboutHolderHolderTitle{
+    margin:8rem 0 0 0;
+    text-align: center;
+    color: white;
+    font-family:'Archivo Black', sans-serif;
+
+}
+
+#aboutHolderHolderText, #aboutHolderHolderSkills{
+    line-height: 26px;
+    font-size: 1.1rem;
+    color:white;
+    width: 40rem;
+    text-align: center;
+}
+
+
+
+.skill{
+    margin:0;
+    color:white;
+    font-family:'Archivo Black', sans-serif;
+}
+
+
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+
+#projects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+#projectsTitle{
+    font-size: 2.3rem;
+    text-align: center;
+    margin:2.5rem 0 0 0;
+    color: white;
+    font-family:'Archivo Black', sans-serif;
+    font-weight: 400;
+}
+
+#projectsText{
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+#projectsHolder{
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 70rem;
+    height:100%;
+    padding-bottom: 5rem;
+}
+
+.project{
+    width: 34rem;
+    height: 28rem;
+    background-color: white;
+    border-radius: 11px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectImg{
+    width: 100%;
+    height: 12.5rem;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.projectImg img{
+    width: 100%;
+    opacity: .5;
+}
+
+.projectBar{
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectBarTitle{
+    font-size: 1.3rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:.5rem 0 0 0;
+}
+
+.projectBarText{
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin:0;
+    color: rgb(58, 58, 58);
+    text-align: center;
+    width: 30rem;
+}
+
+.projectDetailsHolder{
+    width: 30rem;
+    height:6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0 0 0;
+}
+
+.projectTech{
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projectTechSlot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width:5rem;
+    height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.projectTechSlot p{
+    font-family: sans-serif;
+    font-size: .65rem;
+}
+
+.projectTech img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.projectButtons{
+    width: 12.3rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.projectButtonAcessar{
+    cursor: pointer;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 172, 125);
+    border: none;
+    border-radius: 11px;
+    transition: .35s;
+}
+
+.projectButtonGitHub{
+    cursor: pointer;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 40, 41);
+    border: none;
+    border-radius: 11px;
+    transition: .35s;
+}
+
+/*Resume*/
+/*Resume*/
+/*Resume*/
+/*Resume*/
+/*Resume*/
+/*Resume*/
+/*Resume*/
+/*Resume*/
+/*Resume*/
+/*Resume*/
+
+#resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2.75rem;
+}
+
+#resumeTitle{
+    font-size: 2rem;
+    margin:0;
+    text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#resumeHolder{
+    width: 70rem;
+    height: fit-content;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 2rem;
+    border: 3px solid white;
+    padding: 2rem 0 2rem 1rem;
+    border-radius: 11px;
+}
+
+#resumeHolder ul li{
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+}
+
+#resumeHolder ul li a{
+    text-decoration: none;
+    color:rgb(168, 255, 229);
+    transition: .3s;
+}
+
+.resumeHolderTitle, #resumeHolderButton{
+    margin: 0 0 0 1.5rem;
+    
+}
+
+#resumeHolderButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    transition: .35s;
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgb(32, 172, 125);
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#resumeHolderButton img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 4rem;
+    color: white;
+    overflow: hidden;
+}
+
+#contactTitle{
+    margin: 3rem 0 1rem 0;
+}
+
+#contactSubTitle{
+    color: rgb(210, 210, 210);
+    margin: 0;
+    font-weight: 300;
+}
+
+#contactHolder{
+    display: flex;
+    width: 60rem;
+    height: 100%;
+}
+
+#contactHolderLeft, #contactHolderRight{
+    display: flex;
+    width: 30rem;
+    height: 100%;
+}
+
+#contactHolderRight{
+    display: flex;
+    justify-content: center;
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:7rem 0 0 0;
+    width: 23rem;
+    height: 35rem;
+    background-color: white;
+    border-radius: 11px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#formsTitle{
+    margin: 3rem 0 1rem 0;
+    font-size: 1.5rem;
+    color:black;
+    text-align: center;
+}
+
+.formGroup{
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup input{
+    width: 18rem;
+    padding: .75rem;
+    border-radius: 10px;
+    border: 1.5px solid rgb(214, 214, 214);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formGroup label{
+    color: black;
+    margin: 0 0 .5rem 0;
+}
+
+.formGroup label span{
+    color:red;
+}
+
+#message{
+    width: 18rem;
+    padding: .75rem;
+    border-radius: 10px;
+    border: 1.5px solid rgb(214, 214, 214);
+    resize: none;
+}
+
+#contactSubmit{
+    margin-top: 2rem;
+    width: 19.4rem;
+    background-color: rgb(35, 185, 135);
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+}
+
+#contactHolderLeft{
+    flex-direction: column;
+}
+
+#contactHolderLeftTitle{
+    margin: 7rem 0 0 3rem;
+}
+
+#contactHolderLeftText{
+    margin: 1rem 0 0 3rem;
+    width: 30rem;
+}
+
+#contactHolderLeftIcons{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0 0 3rem;
+    width: 30rem;
+    height: fit-content;
+}
+
+.contactHolderLeftIconsSlot{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    gap: 1rem;
+}
+
+.contactHolderLeftIconsSlotIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(41, 255, 184);
+}
+
+.contactHolderLeftIconsSlotIcon img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contactHolderLeftIconsSlotHolder{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.contactHolderLeftIconsSlotHolderText{
+    color: rgb(155, 155, 155);
+    margin: 0;
+}
+
+.contactHolderLeftIconsSlotHolderContent{
+    margin: 0; 
+}
+
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    gap:2rem;
+}
+
+#footerText{
+    color:rgb(153, 153, 153);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#footerEmail{
+    font-size: 2rem;
+    margin: 0;
+}
+
+#footerButtons{
+    display: flex;
+    justify-content: space-between;
+    width: 8.5rem;
+    height: 3rem;
+}
+
+.footerButton{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    fill:white;
+    width:  3rem;
+    height: 3rem;
+    transition: .35s;
+}
+
+.footerButton svg{
+    width:  3rem;
+    height: 3rem;
+}
+
+
+
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+/*MEDIAS */
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+@media screen and (max-width:980px){
+
+#headerWelcome {
+    font-size: 1.5rem;
+}
+
+#headerTitle {
+    font-size: 3.75rem;
+}
+
+#headerText{
+    font-size: .75rem;
+}
+
+#headerResume{
+    gap: .4rem;
+    width: 11.25rem;
+    height: 2.25rem;
+    margin-top: .75rem;
+    font-size: .75rem;
+}
+
+#headerResume svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#headerButtons{
+    width: 11.25rem;
+    height: 2.25rem;
+    margin: .75rem 0 0 0;
+}
+
+#contactButton{
+    padding: .75rem 0.675rem;
+}
+
+#githubButton{
+    padding: .375rem .75rem;
+}
+
+#linkedinButton{
+    padding: .375rem .75rem;
+}
+
+#githubButton svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#linkedinButton svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+}
+
+
+
+@media screen and (max-width:590px){
+    #header {
+        height:70%;
+    }
+
+    #headerWelcome {
+        font-size: 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+#upperNameCircle {
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    animation: pulseGreen 1.3s infinite;
+}
+
+#upperName{
+    top: 2rem;
+    left: 2rem;
+}
+
+
+#headerWelcome {
+    font-size: 1rem;
+}
+
+#headerTitle {
+    font-size: 2.5rem;
+}
+
+#headerText{
+    font-size: .9rem;
+}
+
+#headerResume{
+    gap: .4rem;
+    width: 9rem;
+    height: 2rem;
+    margin-top: .65rem;
+    font-size: .8rem;
+}
+
+#headerResume svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+#headerButtons{
+    width: 9rem;
+    height: 2rem;
+    margin: .6rem 0 0 0;
+}
+
+#contactButton{
+    font-size: .7rem;
+    padding: .55rem .5rem;
+}
+
+#githubButton{
+    padding: .375rem .75rem;
+}
+
+#linkedinButton{
+    padding: .375rem .75rem;
+}
+
+#githubButton svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+#linkedinButton svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+#upperName{
+    top: .3rem;
+    left: 1rem;
+    font-size: .7rem;
+}
+
+}
+
+
+@media screen and (max-width:417px){
+
+    #header {
+        height:60%;
+    }
+
+    #headerWelcome {
+        font-size: 2rem;
+        margin: 2rem 0 0 0;
+    }    
+
+#headerWelcome {
+    font-size: .75rem;
+}
+
+#headerTitle {
+    font-size: 2rem;
+}
+
+#headerText{
+    font-size: .75rem;
+}
+
+#headerResume{
+    gap: .4rem;
+    width: 7rem;
+    height: 2rem;
+    margin-top: .65rem;
+    font-size: .7rem;
+}
+
+#headerResume svg{
+    width: .9rem;
+    height: .9rem;
+}
+
+#headerButtons{
+    width: 9rem;
+    height: 2rem;
+    margin: .6rem 0 0 0;
+}
+
+#contactButton{
+    font-size: .7rem;
+    padding: .55rem .5rem;
+}
+
+#githubButton{
+    padding: .375rem .75rem;
+}
+
+#linkedinButton{
+    padding: .375rem .75rem;
+}
+
+#githubButton svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+#linkedinButton svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+#upperName{
+    top: .3rem;
+    left: 1rem;
+    font-size: .7rem;
+}
+
+}
+
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+/*PROJECTS*/
+
+@media screen and (max-width:1192px){
+    #projectsTitle{
+        font-size: 1.9rem;
+        margin:2rem 0 0 0;
+    }
+
+    #projectsText{
+        font-size: .9rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    #projectsHolder{
+    margin: 1rem 0 0 0;
+    gap: 2rem;
+    width: 58rem;
+    height:100%;
+    padding-bottom: 5rem;
+}
+
+.project{
+    width: 27.9285rem;
+    height: 23rem;
+}
+
+.projectImg{
+    width: 100%;
+    height: 10.3rem;
+}
+
+.projectBar{
+    width: 100%;
+    height: 10.3rem;
+}
+
+.projectBarTitle{
+    font-size: 1rem;
+    margin:.5rem 0 0 0;
+}
+
+.projectBarText{
+    font-size: .75rem;
+    margin:0;
+    width: 25rem;
+}
+
+.projectDetailsHolder{
+    width: 25rem;
+    height:6rem;
+    margin: 1rem 0 0 0;
+}
+
+.projectTech{
+    width: 25rem;
+    height: 2rem;
+    gap: 1rem;
+}
+
+.projectTechSlot{
+    gap: .5rem;
+    width:5rem;
+    height: 1rem;
+}
+
+.projectTechSlot p{
+    font-family: sans-serif;
+    font-size: .6rem;
+}
+
+.projectTech img{
+    width: .75rem;
+    height: .75rem;
+}
+
+.projectButtons{
+    width: 10rem;
+    height: 2.25rem;
+    margin-top: 1rem;
+}
+
+.projectButtonAcessar{
+    font-size:.8rem;
+    padding: .75rem 1rem;
+}
+
+.projectButtonGitHub{
+    padding: .75rem 1rem;
+}
+}
+
+@media screen and (max-width:975px){
+    #projectsHolder{
+    width: 35rem;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width:514px){
+    #projectsTitle{
+        font-size: 1.5rem;
+        margin:2rem 0 0 0;
+    }
+
+    #projectsText{
+        font-size: .8rem;
+        margin: .75rem 0 1rem 0;
+    }
+
+
+.project{
+    width: 21.855rem;
+    height: 18rem;
+}
+
+.projectImg{
+    height: 8rem;
+}
+
+.projectBar{
+    height: 8rem;
+}
+
+.projectBarTitle{
+    font-size: .75rem;
+    margin:.5rem 0 0 0;
+}
+
+.projectBarText{
+    font-size: .6rem;
+    margin:0;
+    width: 19rem;
+}
+
+.projectDetailsHolder{
+    width: 18rem;
+    height:6rem;
+    margin: .5rem 0 0 0;
+}
+
+.projectTech{
+    width: 18rem;
+    height: 1rem;
+    gap: 1rem;
+}
+
+.projectTechSlot{
+    gap: .5rem;
+    width:5rem;
+    height: .7rem;
+}
+
+.projectTechSlot p{
+    font-family: sans-serif;
+    font-size: .6rem;
+}
+
+.projectTech img{
+    width: .5rem;
+    height: .5rem;
+}
+
+.projectButtons{
+    width: 7rem;
+    height: 1.7rem;
+    margin-top: 1rem;
+}
+
+.projectButtonAcessar{
+    font-size:.6rem;
+    padding: .5rem .7rem;
+}
+
+.projectButtonGitHub{
+    padding: .5rem .7rem;
+    font-size:.6rem;
+}
+}
+
+@media screen and (max-width:380px){
+
+#projectsTitle{
+    font-size: 1rem;
+}
+
+#projectsText{
+    font-size: .6rem;
+    margin: .5rem 0 .3rem 0;
+}
+
+.project{
+    width: 18rem;
+    height: 14.82rem;
+}
+
+.projectImg{
+    height: 8rem;
+}
+
+.projectBar{
+    height: 8rem;
+}
+
+.projectBarTitle{
+    font-size: .65rem;
+    margin:.5rem 0 0 0;
+}
+
+.projectBarText{
+    font-size: .45rem;
+    margin:0;
+    width: 15rem;
+}
+
+.projectDetailsHolder{
+    width: 18rem;
+    height:3rem;
+    margin: .5rem 0 0 0;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+
+.projectTech{
+    width: 15rem;
+    height: .5rem;
+    gap: .5rem;
+    margin-left: 2rem;
+}
+
+.projectTechSlot{
+    gap: .5rem;
+    width:3rem;
+    height: .5rem;
+}
+
+.projectTechSlot p{
+    font-family: sans-serif;
+    font-size: .4rem;
+}
+
+.projectTech img{
+    width: .35rem;
+    height: .35rem;
+}
+
+.projectButtons{
+    width: 5rem;
+    height: 1rem;
+    margin-left: 2rem;
+}
+
+.projectButtonAcessar{
+    font-size:.4rem;
+    padding: 0 .5rem;
+    border-radius: 5px;
+}
+
+.projectButtonGitHub{
+    padding: 0 .5rem;
+    font-size:.4rem;
+    border-radius: 5px;
+}
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+@media screen and (max-width:900px){
+    #footer{
+    width: 100%;
+    height: 15rem;
+    gap:1rem;
+}
+
+#footerText{
+    font-size: .9rem;
+    margin: 0;
+}
+
+#footerEmail{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#footerButtons{
+    width: 5.5rem;
+    height: 2rem;
+}
+
+.footerButton{
+    width:  2rem;
+    height: 2rem;
+}
+
+.footerButton svg{
+    width:  2rem;
+    height: 2rem;
+}
+}
+
+@media screen and (max-width:447px){
+    #footer{
+    width: 100%;
+    height: 9rem;
+    gap:1rem;
+}
+
+#footerText{
+    font-size: .75rem;
+    margin: 0;
+}
+
+#footerEmail{
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+#footerButtons{
+    width: 3.75rem;
+    height: 1.5rem;
+}
+
+.footerButton{
+    width:  1.5rem;
+    height: 1.5rem;
+}
+
+.footerButton svg{
+    width:  1.5rem;
+    height: 1.5rem;
+}
+}
+
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+
+@media screen and (max-width:1175px){
+    #about{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 8rem;
+        
+    }
+    
+    #aboutHolder{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 65rem;
+        height: 100%;
+    }
+    
+    #aboutHolderImg{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 11px;
+    }
+    
+    #aboutHolderImg img{
+        width: 100%;
+        transition: .35s;
+    }
+    
+    #aboutHolderHolder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+        height: 100%;
+    }
+    
+    #aboutHolderHolderTitle{
+        font-size: 1.5rem;
+        margin:9rem 0 0 0;
+        width: 35rem;
+    
+    }
+    
+    #aboutHolderHolderText{
+        font-size: .9rem;
+        width:75%;
+    }
+
+    #aboutHolderHolderSkills{
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .skill{
+        margin:0;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width:965px){
+    #aboutHolderHolderText{
+        font-size: .9rem;
+        width:80%;
+    }
+}
+
+@media screen and (max-width:950px){
+    #about{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #aboutHolder{
+        flex-direction: column;
+        width: 65rem;
+        height: fit-content;
+        gap: 2rem;
+
+    }
+    
+    #aboutHolderImg{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 11px;
+    }
+    
+    #aboutHolderImg img{
+        width: 100%;
+        transition: .35s;
+    }
+    
+    #aboutHolderHolder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+        height: 100%;
+    }
+    
+    #aboutHolderHolderTitle{
+        font-size: 1.5rem;
+        margin:0;
+        width: 35rem;
+    
+    }
+    
+    #aboutHolderHolderText{
+        font-size: .9rem;
+        width:90%;
+    }
+
+    #aboutHolderHolderSkills{
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .skill{
+        margin:0;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width:680px){
+    #about{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    
+    #aboutHolder{
+        flex-direction: column;
+        width: 65rem;
+        height: fit-content;
+        gap: 2rem;
+    }
+    
+    #aboutHolderImg{
+        width: 11rem;
+        height: 11rem;
+        border-radius: 11px;
+    }
+    
+    #aboutHolderImg img{
+        width: 100%;
+        transition: .35s;
+    }
+    
+    #aboutHolderHolder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+        height: 100%;
+    }
+    
+    #aboutHolderHolderTitle{
+        font-size: 1.1rem;
+        margin: 0;
+        width: 25rem;
+    
+    }
+    
+    #aboutHolderHolderText{
+        font-size: .75rem;
+        width:85%;
+        margin: 1rem 0;
+    }
+
+    #aboutHolderHolderSkills{
+        font-size: .9rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .skill{
+        margin:0;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:586px){
+    #about{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    
+    #aboutHolder{
+        flex-direction: column;
+        width: 65rem;
+        height: fit-content;
+        gap: 2rem;
+        padding: 0;
+    }
+    
+    #aboutHolderImg{
+        width: 9rem;
+        height: 9rem;
+        border-radius: 11px;
+        margin-top: 0;
+    }
+    
+    #aboutHolderImg img{
+        width: 100%;
+        transition: .35s;
+    }
+    
+    #aboutHolderHolder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+        height: 100%;
+    }
+    
+    #aboutHolderHolderTitle{
+        font-size: 1rem;
+        margin: 0;
+        width: 23rem;
+    
+    }
+    
+    #aboutHolderHolderText{
+        font-size: .65rem;
+        width:65%;
+        margin: 1rem 0;
+    }
+
+    #aboutHolderHolderSkills{
+        font-size: .8rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .skill{
+        margin:0;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width:448px){
+    #about{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0rem;
+    }
+    
+    #aboutHolder{
+        flex-direction: column;
+        width: 65rem;
+        height: fit-content;
+        gap: 2rem;
+
+    }
+    
+    #aboutHolderImg{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 11px;
+    }
+    
+    #aboutHolderImg img{
+        width: 100%;
+        transition: .35s;
+    }
+    
+    #aboutHolderHolder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+        height: 100%;
+    }
+    
+    #aboutHolderHolderTitle{
+        font-size: .8rem;
+        margin: 0;
+        width: 18rem;
+    
+    }
+    
+    #aboutHolderHolderText{
+        font-size: .6rem;
+        width:55%;
+        margin: 1rem 0 .5rem 0;
+        line-height: 20px;
+    }
+
+    #aboutHolderHolderSkills{
+        font-size: .75rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .skill{
+        margin:0;
+        font-size: .65rem;
+    }
+}
+
+@media screen and (max-width:375px){
+    #about{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0rem;
+    }
+    
+    #aboutHolder{
+        flex-direction: column;
+        width: 65rem;
+        height: fit-content;
+        gap: 2rem;
+
+    }
+    
+    #aboutHolderImg{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 11px;
+    }
+    
+    #aboutHolderImg img{
+        width: 100%;
+        transition: .35s;
+    }
+    
+    #aboutHolderHolder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+        height: 100%;
+    }
+    
+    #aboutHolderHolderTitle{
+        font-size: .8rem;
+        margin: 0;
+        width: 18rem;
+    
+    }
+    
+    #aboutHolderHolderText{
+        font-size: .6rem;
+        width:45%;
+        margin: 1rem 0 .5rem 0;
+        line-height: 20px;
+    }
+
+    #aboutHolderHolderSkills{
+        font-size: .65rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .skill{
+        margin:0;
+        font-size: .55rem;
+    }
+}
+
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+/*RESUME*/
+
+@media screen and (max-width:1197px){
+    #resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2.75rem;
+}
+
+#resumeTitle{
+    font-size: 2rem;
+    margin:0;
+}
+
+#resumeHolder{
+    width: 55rem;
+    height: fit-content;
+    margin-top: 2rem;
+    border: 3px solid white;
+    padding: 2rem 0 2rem 1rem;
+    border-radius: 11px;
+}
+
+#resumeHolder ul li{
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.resumeHolderTitle, #resumeHolderButton{
+    margin: 0 0 0 1.5rem;
+    
+}
+
+.resumeHolderTitle{
+    font-size: 1.2rem;
+}
+
+#resumeHolderButton{
+    gap: .5rem;
+    padding: .6rem;
+    font-size: .75rem;
+    border-radius: 10px;
+}
+}
+
+@media screen and (max-width:940px){
+    #resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2.75rem;
+}
+
+#resumeTitle{
+    font-size: 2rem;
+    margin:0;
+}
+
+#resumeHolder{
+    width: 40rem;
+    height: fit-content;
+    margin-top: 2rem;
+    border: 3px solid white;
+    padding: 2rem 0 2rem 1rem;
+    border-radius: 11px;
+}
+
+#resumeHolder ul li{
+    font-size: .8rem;
+    margin: 0 0 .5rem 0;
+}
+
+.resumeHolderTitle, #resumeHolderButton{
+    margin: 0 0 0 1rem;
+    
+}
+
+.resumeHolderTitle{
+    font-size: .95rem;
+}
+
+#resumeHolderButton{
+    gap: .3rem;
+    padding: .3rem;
+    font-size: .65rem;
+    border-radius: 10px;
+}
+}
+
+@media screen and (max-width:710px){
+    #resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2.75rem;
+}
+
+#resumeTitle{
+    font-size: 2rem;
+    margin:0;
+}
+
+#resumeHolder{
+    width: 30rem;
+    height: fit-content;
+    margin-top: 2rem;
+    border: 3px solid white;
+    padding: 2rem 0 2rem 1rem;
+    border-radius: 11px;
+}
+
+#resumeHolder ul li{
+    font-size: .7rem;
+    margin: 0 0 .5rem 0;
+}
+
+.resumeHolderTitle, #resumeHolderButton{
+    margin: 0 0 0 1.6rem;
+    
+}
+
+.resumeHolderTitle{
+    font-size: .85rem;
+}
+
+#resumeHolderButton{
+    gap: .3rem;
+    padding: .2rem .5rem;
+    font-size: .55rem;
+    border-radius: 10px;
+}
+
+#resumeHolderButton img{
+    width: 1rem;
+    height: 1rem;
+}
+}
+
+@media screen and (max-width:540px){
+    #resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2.75rem;
+}
+
+#resumeTitle{
+    font-size: 1.5rem;
+    margin:0;
+}
+
+#resumeHolder{
+    width: 25rem;
+    height: fit-content;
+    margin-top: 2rem;
+    border: 3px solid white;
+    padding: .5rem 0 2rem 1rem;
+    border-radius: 11px;
+}
+
+#resumeHolder ul li{
+    font-size: .7rem;
+    margin: 0 0 .3rem 0;
+}
+
+#resumeHolder ul{
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+}
+
+.resumeHolderTitle, #resumeHolderButton{
+    margin: 1rem 0 .5rem .5rem;
+    
+}
+
+.resumeHolderTitle{
+    font-size: .75rem;
+}
+
+#resumeHolderButton{
+    gap: .3rem;
+    padding: .4rem .5rem;
+    font-size: .45rem;
+    border-radius: 10px;
+}
+
+#resumeHolderButton img{
+    width: 1rem;
+    height: 1rem;
+}
+}
+
+@media screen and (max-width:469px){
+    #resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2.75rem;
+}
+
+#resumeTitle{
+    font-size: 1.4rem;
+    margin:0;
+}
+
+#resumeHolder{
+    width: 18rem;
+    height: fit-content;
+    margin-top: 2rem;
+    border: 3px solid white;
+    padding: .5rem 0 1rem 1rem;
+    border-radius: 11px;
+}
+
+#resumeHolder ul li{
+    font-size: .8rem;
+    margin: 0 0 .3rem 0;
+}
+
+#resumeHolder ul{
+    margin: 0 0 0 1rem;
+    padding: 0;
+}
+
+.resumeHolderTitle, #resumeHolderButton{
+    margin: 1rem 0 .5rem 0;
+    
+}
+
+.resumeHolderTitle{
+    font-size: .75rem;
+}
+
+#resumeHolderButton{
+    gap: .3rem;
+    padding: .6rem .6rem;
+    font-size: .8rem;
+    border-radius: 10px;
+}
+
+#resumeHolderButton img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+}
+
+@media screen and (max-width:328px){
+
+#resumeTitle{
+    font-size: 1.2rem;
+}
+
+#resumeHolder{
+    width: 14rem;
+    margin-top: .9rem;
+}
+
+#resumeHolder ul li{
+    font-size: .6rem;
+    margin: 0 0 .3rem 0;
+}
+
+.resumeHolderTitle{
+    font-size: .65rem;
+}
+
+#resumeHolderButton{
+    gap: .3rem;
+    padding: .45rem .45rem;
+    font-size: .6rem;
+    border-radius: 8px;
+}
+
+#resumeHolderButton img{
+    width: .9rem;
+    height: .9rem;
+}
+}
+
+@media screen and (max-width:258px){
+
+
+#resumeHolder{
+    width: 10rem;
+}
+
+#resumeHolder ul li{
+    font-size: .4rem;
+    margin: 0 0 .3rem 0;
+}
+
+#resumeHolder ul{
+    margin: 0 ;
+    padding: 0;
+}
+
+.resumeHolderTitle, #resumeHolderButton{
+    margin: 1rem 0 .5rem 0;
+    
+}
+
+.resumeHolderTitle{
+    font-size: .65rem;
+}
+
+}
+
+@media screen and (max-width:927px){
+    #contactHolder{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+#forms{
+    margin:1.5rem 0 0 0;
+}
+
+#contactHolderLeftTitle{
+    margin: 4rem 0 0 3.2rem;
+}
+
+#contactHolderLeftText{
+    margin: 1rem 0 0 3.2rem;
+    width: 30rem;
+}
+
+#contactHolderLeftIcons{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0 0 3.2rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+}
+
+@media screen and (max-width:536px){
+#contactTitle{
+    font-size: 1.5rem;
+    margin: 3rem 0 .5rem 0;
+}
+
+#contactSubTitle{
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+#contactHolder{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+#forms{
+    margin:1.5rem 0 0 0;
+}
+
+#contactHolderLeftTitle{
+    font-size: 1.75rem;
+    margin: 2.75rem 0 0 3.2rem;
+}
+
+#contactHolderLeftText{
+    font-size: .9rem;
+    margin: 1rem 0 0 3.2rem;
+    width: 20rem;
+}
+
+#contactHolderLeftIcons{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0 0 3.2rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.contactHolderLeftIconsSlot{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    gap: .7rem;
+}
+
+.contactHolderLeftIconsSlotIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(41, 255, 184);
+}
+
+.contactHolderLeftIconsSlotIcon img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.contactHolderLeftIconsSlotHolder{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.contactHolderLeftIconsSlotHolderText{
+    font-size: .85rem;
+    color: rgb(155, 155, 155);
+    margin: 0;
+}
+
+.contactHolderLeftIconsSlotHolderContent{
+    font-size: .9rem;
+    margin: 0; 
+}
+
+}
+
+@media screen and (max-width:453px){
+#contactTitle{
+    font-size: 1.5rem;
+    margin: 3rem 0 .5rem 0;
+}
+
+#contactSubTitle{
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+#contactHolder{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+#forms{
+    margin:1.5rem 0 0 0;
+    width: 20rem;
+    height: 32rem;
+}
+
+#contactHolderRight{
+    display: flex;
+}
+
+#formsTitle{
+    margin: 1.8rem 0 1rem 0;
+    font-size: 1.2rem;
+    color:black;
+    text-align: center;
+}
+
+.formGroup{
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup input{
+    width: 14rem;
+    padding: .75rem;
+    border-radius: 10px;
+    border: 1.5px solid rgb(214, 214, 214);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formGroup label{
+    color: black;
+    margin: 0 0 .5rem 0;
+    font-size: .9rem;
+}
+
+.formGroup label span{
+    color:red;
+}
+
+#message{
+    width: 14rem;
+    padding: .75rem;
+    border-radius: 10px;
+    border: 1.5px solid rgb(214, 214, 214);
+    resize: none;
+}
+
+#contactSubmit{
+    margin-top: 2rem;
+    width: 15.4rem;
+    background-color: rgb(35, 185, 135);
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+}
+
+#contactHolderLeftTitle{
+    font-size: 1.75rem;
+    margin: 2.75rem 0 0 4.7rem;
+}
+
+#contactHolderLeftText{
+    font-size: .9rem;
+    margin: 1rem 0 0 4.7rem;
+    width: 20rem;
+}
+
+#contactHolderLeftIcons{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0 0 4.7rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.contactHolderLeftIconsSlot{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    gap: .7rem;
+}
+
+.contactHolderLeftIconsSlotIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(41, 255, 184);
+}
+
+.contactHolderLeftIconsSlotIcon img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.contactHolderLeftIconsSlotHolder{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.contactHolderLeftIconsSlotHolderText{
+    font-size: .85rem;
+    color: rgb(155, 155, 155);
+    margin: 0;
+}
+
+.contactHolderLeftIconsSlotHolderContent{
+    font-size: .9rem;
+    margin: 0; 
+}
+
+}
+
+@media screen and (max-width:376px){
+#contactTitle{
+    font-size: 1.3rem;
+    margin: 3rem 0 .5rem 0;
+}
+
+#contactSubTitle{
+    font-size: .95rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+#contactHolder{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+#forms{
+    margin:1.5rem 0 0 0;
+    width: 17rem;
+    height: 30.5rem;
+}
+
+#contactHolderRight{
+    display: flex;
+}
+
+#formsTitle{
+    margin: 1.4rem 0 1rem 0;
+    font-size: 1rem;
+    color:black;
+    text-align: center;
+}
+
+.formGroup{
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup input{
+    width: 12rem;
+    padding: .75rem;
+    border-radius: 10px;
+    border: 1.5px solid rgb(214, 214, 214);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formGroup label{
+    color: black;
+    margin: 0 0 .5rem 0;
+    font-size: .8rem;
+}
+
+.formGroup label span{
+    color:red;
+}
+
+#message{
+    width: 12rem;
+    padding: .75rem;
+    border-radius: 10px;
+    border: 1.5px solid rgb(214, 214, 214);
+    resize: none;
+}
+
+#contactSubmit{
+    margin-top: 2rem;
+    width: 12.4rem;
+    background-color: rgb(35, 185, 135);
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+}
+
+#contactHolderLeftTitle{
+    font-size: 1.35rem;
+    margin: 2.5rem 0 0 6.4rem;
+}
+
+#contactHolderLeftText{
+    font-size: .8rem;
+    margin: .5rem 0 0 6.4rem;
+    width: 15rem;
+}
+
+#contactHolderLeftIcons{
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    margin: 1rem 0 0 6.4rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.contactHolderLeftIconsSlot{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    gap: .4rem;
+}
+
+.contactHolderLeftIconsSlotIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgb(41, 255, 184);
+}
+
+.contactHolderLeftIconsSlotIcon img{
+    width: .9rem;
+    height: .9rem;
+}
+
+.contactHolderLeftIconsSlotHolder{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.contactHolderLeftIconsSlotHolderText{
+    font-size: .85rem;
+    color: rgb(155, 155, 155);
+    margin: 0;
+}
+
+.contactHolderLeftIconsSlotHolderContent{
+    font-size: .9rem;
+    margin: 0; 
+}
+
+}
+
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+/*HOVERS */
+
+:root{
+    --azul-: rgba(41, 196, 255);
+}
+
+#headerTitle:hover {
+    background: linear-gradient(90deg, rgb(41,196,255), rgb(41, 255, 184));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#upperName:hover {
+    background: linear-gradient(90deg, rgb(41,196,255), rgb(41, 255, 184));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#headerResume:hover{
+    background-color: rgb(41, 255, 184);
+}
+
+#contactButton:hover, #githubButton:hover, #linkedinButton:hover{
+    color: rgb(9, 9, 41);
+    fill: rgb(9, 9, 41);
+    background-color: white;
+}
+
+#aboutHolderImg img:hover{
+    transform: scale(1.1);
+}
+
+.footerButton:hover{
+    fill:rgb(41, 255, 255);
+}
+
+.projectButtonAcessar:hover{
+    background-color: rgb(21, 119, 86);
+}
+
+#resumeHolderButton:hover{
+    background-color: rgb(32, 172, 125);
+}
+
+.projectButtonGitHub:hover{
+    background-color: rgb(53, 57, 58);
+}
+
+.projectTechSlot:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#resumeHolder ul li a:hover{
+    text-decoration: none;
+    color:rgb(52, 196, 152);
+}
+
+.formGroup input:focus{
+    outline:none;
+    border: 1px solid rgb(41, 255, 184);
+    box-shadow: 0 0 6px rgba(41, 255, 170, 0.7);
+}
+
+.formGroup textarea:focus{
+    outline:none;
+    border: 1px solid rgb(41, 255, 184);
+    box-shadow: 0 0 6px rgba(41, 255, 170, 0.7);
+}
+
+#contactSubmit:hover{
+    transform: scale(1.07);
+    background-color: rgb(32,172,125);
+}
+
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+/*ANIMATIONS*/
+
+@keyframes pulseGreen {
+    0% {
+        background-color: rgb(0, 180, 0);
+        box-shadow: 0 0 4px rgb(0, 180, 0);
+    }
+    50% {
+        background-color: rgb(0, 255, 0);
+        box-shadow: 0 0 10px rgb(0, 255, 0);
+    }
+    100% {
+        background-color: rgb(0, 180, 0);
+        box-shadow: 0 0 4px rgb(0, 65, 0);
+    }
+}
+
+@keyframes pulseRed {
+    0% {
+      background-color: rgb(180, 0, 0);
+      box-shadow: 0 0 4px rgb(180, 0, 0);
+    }
+    50% {
+      background-color: rgb(255, 0, 0);
+      box-shadow: 0 0 10px rgb(255, 0, 0);
+    }
+    100% {
+      background-color: rgb(180, 0, 0);
+      box-shadow: 0 0 4px rgb(65, 0, 0);
+    }
+  }
+
+
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+/*EFFECTS*/ 
+
+canvas {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+@font-face {
+    font-family: 'Archivo Black';
+    font-display: swap;
+}
